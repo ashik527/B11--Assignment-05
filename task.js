@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', function(){
                 initialCountUp++;
                 taskElement.textContent = taskCount;
                 countUpward.textContent = initialCountUp;
+                // Nested condition
+                if(taskCount === 0){
+                    alert('You have successfully completed all tasks!')
+                }
 
                 // add log entry to activity log
                 const logHistory = document.createElement('p');
