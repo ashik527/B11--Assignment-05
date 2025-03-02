@@ -32,19 +32,28 @@
             </div>
             <div class="flex flex-col justify-start mb-6 ml-12">
                 <h2 class="font-normal text-xl text-blue-800"><span class="font-bold text-2xl">Question-2:</span> What is the difference between innerHTML, innerText, and textContent ?</h2>
-                <p class="text-xl">Ans : </p>
+                <p class="text-xl">Ans : The main difference between those properties is realized through what they return. The innerHTML returns all the html text contents including html tags and spacing. The innerText returns only the text content of the element and its children without css hitten text spacing and tags. Finally the textContent property returns all the text contents of the element and its decendaces with spacing and css hidden text, but without tags.</p>
             </div>
             <div class="flex flex-col justify-start mb-6 ml-12">
                 <h2 class="font-normal text-xl text-blue-800"><span class="font-bold text-2xl">Question-3:</span> What is event delegation in the DDOM?</h2>
-                <p class="text-xl">Ans : </p>
+                <p class="text-xl">Ans : Event delegation is basically a pattern to handle events efficiently. With this process we can add a commont event listener condition the parent element and target its specific child or element instead of adding same event condition to every similar elements. </p>
             </div>
             <div class="flex flex-col justify-start mb-6 ml-12">
                 <h2 class="font-normal text-xl text-blue-800"><span class="font-bold text-2xl">Question-4:</span> What is event bubbling in the DOM?</h2>
-                <p class="text-xl">Ans : </p>
+                <p class="text-xl">Ans : Event Bubbling in javaScript is a mechanism where an event triggered on a child propagates upwards through its ancestors all the way to the parent elements. It allows the parent elements to respond to events triggered by their child elements.</p>
             </div>
             <div class="flex flex-col justify-start mb-6 ml-12">
                 <h2 class="font-normal text-xl text-blue-800"><span class="font-bold text-2xl">Question-5:</span> How do you create,add and remove elements in JavaScrript?</h2>
-                <p class="text-xl">Ans : </p>
+                <p class="text-xl">Ans : We can dynamically create , add or remove element in javaScript using document object model(DOM). Some common methods are :
+                
+                    <li>document.createElement("tagName")</li>
+                    <li>parentElement.appendChild(childElement)</li>
+                    <li>element.textContent = "text"</li>
+                    <li>element.innerHTML = "html"</li>
+                    <li>parentElement.removeCild()</li>
+                    <li>childElement.remove()</li>
+  
+                </p>
             </div>
         </div>
     </main>
