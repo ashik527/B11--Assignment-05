@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-base-200">
+<body class="bg-base-200" id="rgb-body">
     <div class="container mx-auto p-4">
         <div class="flex justify-between shadow-md rounded-lg p-4 items-center mb-4">
             <div class="flex items-center">
@@ -17,7 +17,7 @@
             <div class="flex items-center gap-2">
                 <img src="assets/checkbox.png" alt="">
                 <h2 class="font-bold mr-6 count-up">23</h2>
-                <button><img src="assets/theme-btn.png" alt=""></button>
+                <button id="rgb-btn"><img src="assets/theme-btn.png" alt=""></button>
             </div>
         </div>
         <div class="bg-white p-4 rounded-lg shadow-sm mb-4 flex justify-around items-center space-y-12 relative">
@@ -138,5 +138,6 @@
         updateClock();
     </script>
     <script src="task.js"></script>
+    <script src="rgb.js"></script>
 </body>
 </html>
