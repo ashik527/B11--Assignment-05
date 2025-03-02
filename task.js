@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const buttons = document.querySelectorAll('.complete');
     const activityLog = document.getElementById('activity-log');
     const clearHistoryBtn = document.getElementById('history-btn');
+    const countUpward = document.querySelector(".count-up");
+    let initialCountUp = parseInt(countUpward.textContent)
 
     // Get Updated time
     function getTime(){
@@ -20,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function(){
                 alert("Board Updated Successfully")
                 button.classList.add('opacity-15','pointer-events-none');
                 taskCount--;
+                initialCountUp++;
                 taskElement.textContent = taskCount;
+                countUpward.textContent = initialCountUp;
 
                 // add log entry to activity log
                 const logHistory = document.createElement('p');
