@@ -31,12 +31,9 @@ document.addEventListener('DOMContentLoaded', function(){
                 // clear history and reset buttons
                 clearHistoryBtn.addEventListener('click', function (){
                     activityLog.innerHTML = " ";
-                    taskCount = 6;
                     taskElement.textContent = taskCount;
 
-                    buttons.forEach((button)=>{
-                        button.classList.remove('opacity-15','pointer-events-none')
-                    })
+                    
                 })
             }
         })
